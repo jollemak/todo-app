@@ -46,6 +46,7 @@ ulList.addEventListener('click', (e) => {
     if (deleteBtn) {
         const btnID = parseInt(deleteBtn.id)  
         todoList.splice(btnID, 1)
+        saveTodos(todoList)
         createListItem(todoList)
     }
 });
